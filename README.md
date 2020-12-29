@@ -40,6 +40,8 @@ Required software (for resampling): [SoX](http://sox.sourceforge.net/) ([Install
 
 `sox audiofile.wav -r 16000 -b 32 -e float audiofile-float.wav`
 
+ffmpeg：ffmpeg -i audiofile.wav -acodec pcm_f32le -ar 16000 audiofile-float.wav
+
 Tested in Ubuntu + Intel i7 CPU + Nvidia Titan X (Pascal) with Cuda (>=8.0) and CuDNN (>=5.0). CPU mode should also work with minor changes.
 
 ### Quick start (testing)
